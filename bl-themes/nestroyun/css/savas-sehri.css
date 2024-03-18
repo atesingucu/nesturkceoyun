@@ -1,0 +1,123 @@
+.menu {
+    border: 18px solid transparent; /* Border boyutunu ayarla */
+    -webkit-border-image: url("/bl-themes/nestroyun/img/menu.webp") 30 30 30 30 repeat; /* Webkit tarayıcılar için */
+border-image: url("/bl-themes/nestroyun/img/menu.webp") 30 30 30 30 repeat;
+}
+
+* {
+        cursor: url('bl-themes/nestroyun/img/mouse.webp'), auto;
+}
+
+input {
+    background: #80ce30;
+    height: 36px;
+    color: #000;
+    border-radius: transparent;
+}
+
+h1, .logo {
+  display: flex;
+  align-items: center; /* Dikey olarak ortala */
+  justify-content: center; /* Eğer gerekliyse */
+  font-size: 36px; /* Yazı boyutunu ayarla */
+}
+
+h1::before, h1::after {
+  content: "";
+  display: block;
+  width: 1.6em; /* Yazı boyutuna göre genişlik */
+  height: 1.6em; /* Yazı boyutuna göre yükseklik */
+  background: url('/bl-themes/nestroyun/img/h1.webp') no-repeat center / cover;
+  margin: 0 0.5em; /* Yazı ile resim arasındaki boşluk */
+}
+
+/* Varsayılan olarak büyük ekranlar için stil */
+.logo::after {
+  content: "";
+  display: block;
+  width: 1.5em; /* Yazı boyutuna göre genişlik */
+  height: 1.5em; /* Yazı boyutuna göre yükseklik */
+  margin: 0 0.5em; /* Yazı ile resim arasındaki boşluk */
+}
+
+.logo {
+ font-size: 1.5rem;
+} 
+
+/* Ekran boyutu 400px'den küçükse uygulanacak stil */
+@media (max-width: 360px) {
+  .logo::after {
+    width: 1.2em; /* Yazı boyutuna göre genişlik */
+    height: 1.2em; /* Yazı boyutuna göre yükseklik */
+    margin: 0 0.2em; /* Yazı ile resim arasındaki boşluk */
+  }
+
+h1::before, h1::after {
+  content: "";
+  display: block;
+  width: 1.2em; /* Yazı boyutuna göre genişlik */
+  height: 1.2em; /* Yazı boyutuna göre yükseklik */
+  margin: 0 0.2em; /* Yazı ile resim arasındaki boşluk */
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+  .logo {
+   font-size: 1.0rem;
+  } 
+
+}
+
+
+.plugin-label {
+  display: flex;
+  align-items: center; /* Dikey olarak ortala */
+  justify-content: center; /* Eğer gerekliyse */
+  font-size: 24px; /* Yazı boyutunu ayarla */
+}
+
+.plugin-label::before, .plugin-label::after {
+  content: "";
+  display: block;
+  width: 1.2em; /* Yazı boyutuna göre genişlik */
+  height: 1.2em; /* Yazı boyutuna göre yükseklik */
+  background: url('/bl-themes/nestroyun/img/nav.webp') no-repeat center / cover;
+  margin: 0 0.5em; /* Yazı ile resim arasındaki boşluk */
+}
+
+@media (max-width: 768px) {
+.nav ul {
+background: #000;
+}
+
+.nav li {
+font-size: 36px;
+}
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+}
+
+a, .nav a {
+            color: #80ce15;
+}
+
+a:hover, .nav a:hover {
+    color: #fff; /* Yazı rengi beyaz (isteğe bağlı olarak değiştirilebilir) */
+}
+
+.hamburger-menu, .button {
+    background-color: #80ce30; /* Mavi arka plan */
+    color: #000; /* Beyaz yazı rengi */
+}
+
+/* Buton üzerine gelindiğinde renk değişimi */
+.button:hover {
+    background-color: #fff; /* Daha koyu bir mavi */
+    color: #000; /* Yazı rengi beyaz (isteğe bağlı olarak değiştirilebilir) */
+}
+
