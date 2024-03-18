@@ -60,6 +60,10 @@ input {
         display: block;
     }
 
+    body img, body p, container p, #main-nav{
+        width: 96%;
+} 
+
     .nav ul {
         display: none;
         flex-direction: column;
